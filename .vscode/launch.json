@@ -1,0 +1,83 @@
+
+
+{
+    
+    "version": "2.0.0",
+    "configurations": [
+        {
+            "name": "debug win32",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "C:/Kozy_Repo/Tools/mingw64/bin/mingw32-make.exe",
+            "args": [
+                "BUILD_CONFIG=debug_0", 
+                "COMPILER=mingw32/bin/g++",
+                "OUTNAME=gpgpu_debug.exe",
+                "run"
+            ],
+            "environment": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:/Kozy_Repo/Tools/mingw64/bin/gdb.exe",
+            "setupCommands": [
+            {
+                "description": "Enable pretty-printing for gdb",
+                "text": "-enable-pretty-printing",
+                "ignoreFailures": true
+            },
+            ]
+        },
+
+        {
+            "name": "debug win64",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "C:/Kozy_Repo/Tools/mingw64/bin/mingw32-make.exe",
+            "args": [
+                "BUILD_CONFIG=debug_0", 
+                "OUTNAME=gpgpu_debug.exe",
+                "run"
+            ],
+            "environment": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:/Kozy_Repo/Tools/mingw64/bin/gdb.exe",
+            "setupCommands": [
+            {
+                "description": "Enable pretty-printing for gdb",
+                "text": "-enable-pretty-printing",
+                "ignoreFailures": true
+            },
+            ]
+        },
+        {
+            "name": "release win64",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "C:/Kozy_Repo/Tools/mingw64/bin/mingw32-make.exe",
+            "args": [
+                "BUILD_CONFIG=release_0", 
+                "OUTNAME=gpgpu_64.exe"
+                
+            ],
+            "environment": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:/Kozy_Repo/Tools/mingw64/bin/gdb.exe",
+            "setupCommands": [
+            {
+                "description": "Enable pretty-printing for gdb",
+                "text": "-enable-pretty-printing",
+                "ignoreFailures": true
+            },
+            ]
+        }
+
+    ]
+}
