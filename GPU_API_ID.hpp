@@ -88,7 +88,10 @@ constexpr std::string_view api_enum_toString(Implemented_API name) noexcept {
 inline constexpr std::string_view api_enum_toString(API_ID_T id) noexcept {return api_enum_toString(Implemented_API(id));}
 	
 /*
-    Use this as a key to differentiate between various APIs and their respective major and minor versions
+    Use this as a key to differentiate between various APIs and their respective variants.
+
+	It is recommended to dynamically determinate what kind of API you want to use and then create an object, that has its respective GPU_API_ID as a compile-time object, so that
+	one can check inside of its methods what api-calls and features to use. For example, using if constexpr(apiID.major == 4){ do Stuff}.
 */
 struct GPU_API_ID {
 
@@ -130,10 +133,9 @@ struct GPU_API_ID {
 	}
 
 
-/*
-
-Default
-*/
+	/*
+		Default
+	*/
 	constexpr GPU_API_ID() noexcept : 
 		GPU_API_ID(Implemented_API::OpenGL, 3, 3)
 	{
@@ -144,10 +146,9 @@ Default
 
 	}
 
-/*
+	/*
 
-
-*/
+	*/
 	constexpr bool operator==(const GPU_API_ID& rhs) const noexcept {
 		return api_ID == rhs.api_ID && major == rhs.major && minor == rhs.minor;
 	}
@@ -177,7 +178,7 @@ Default
 
 
 template<const GPU_API_ID& v>
-consteval std::string_view m_to_string() {
+consteval auto api_toString() {
 	using namespace KozyLibrary;
 	
 	return concat_CT<std::string_view(v.API_Name),
@@ -192,3 +193,7 @@ consteval std::string_view m_to_string() {
 }
 
 #endif
+
+/* TODO:
+- add handling of Extensions
+*/
