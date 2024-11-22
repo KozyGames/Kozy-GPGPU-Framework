@@ -5,7 +5,7 @@
 
 /*
 
- */
+*/
 
 
 namespace Kozy {
@@ -15,8 +15,9 @@ Any build changes shall be done here
 
 
 */	
-namespace BuildConfig {
-    
+struct BuildConfig {
+    BuildConfig() = delete;
+	
     inline static constexpr unsigned VERSION_MAJOR = 1;
     inline static constexpr unsigned VERSION_MINOR = 0; 
 
@@ -24,6 +25,9 @@ namespace BuildConfig {
 
 
 	inline static constexpr bool IS_DEBUG = M_IS_DEBUG;
+
+	inline static constexpr bool DEFAULT_IS_FULLSCREEN =  (IS_DEBUG)? false : true;
+	
 	/* 
 		0 is the ID of the native primary monitor.
 		If the value is higher than there are monitors, then it reverts to the native monitor.
@@ -46,10 +50,9 @@ namespace BuildConfig {
 	inline static constexpr bool IS_AT_LEAST_64_BIT_WORD = ( sizeof(size_t)*8 >= 64 ); 	
 	
 
-
 // * Window Settings *
 /*
-	These are used for when the program is started for the first time or if reading the Settings-file failed
+	These are used for when the program is started for the first time or if reading/creating the Settings-file failed
 
 */
 

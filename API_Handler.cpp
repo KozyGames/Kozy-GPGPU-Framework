@@ -3,15 +3,21 @@
 
 
 #include <stdexcept>
+#include <string>
 
 namespace Kozy {
     
-API_Handler API_Handler::get_API_Handler(const Kozy::GPU_API_ID& apiTag) {
+API_Handler API_Handler::create_API_Handler(const Kozy::GPU_API_ID& apiTag) {
     using enum Kozy::Implemented_API;
 
-    switch (apiTag.api_ID) {
+
+    switch (Kozy::Implemented_API(apiTag.api_ID)) {
         case OpenGL:
+        try{
             return Kozy::load_API_Handler_OpenGL(apiTag);
+        } catch(const std::exception& e){
+            throw std::runtime_error((std::string("Error: get_API_Handler\n") + e.what()));
+        }
         default:
             throw std::invalid_argument(
                 "Error: get_API_Handler\n"

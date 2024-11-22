@@ -1,3 +1,4 @@
-/home/mkoslow/Kozy_Repo/Projects/Kozy-GPGPU-Framework/build/CMakeFiles/GPGPU-Test.dir
-/home/mkoslow/Kozy_Repo/Projects/Kozy-GPGPU-Framework/build/CMakeFiles/edit_cache.dir
-/home/mkoslow/Kozy_Repo/Projects/Kozy-GPGPU-Framework/build/CMakeFiles/rebuild_cache.dir
+C:/Kozy_Repo/Projects/Kozy-GPGPU-Framework/build/CMakeFiles/Kozy_GPGPU.dir
+C:/Kozy_Repo/Projects/Kozy-GPGPU-Framework/build/CMakeFiles/GPGPU-Test.dir
+C:/Kozy_Repo/Projects/Kozy-GPGPU-Framework/build/CMakeFiles/edit_cache.dir
+C:/Kozy_Repo/Projects/Kozy-GPGPU-Framework/build/CMakeFiles/rebuild_cache.dir

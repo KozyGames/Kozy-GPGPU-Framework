@@ -5,10 +5,13 @@
 
 namespace Kozy {
 
-template<const Kozy::GPU_API_ID& apiTag>
+API_Handler load_API_Handler_OpenGL(const Kozy::GPU_API_ID&);
+
+
+template<Kozy::GPU_API_ID apiTag>
 class API_Handler_OpenGL : public API_Handler {
 
-friend Kozy::API_Handler Kozy::API_Handler::get_API_Handler(const Kozy::GPU_API_ID&);
+friend Kozy::API_Handler Kozy::API_Handler::create_API_Handler(const Kozy::GPU_API_ID&);
 friend Kozy::API_Handler Kozy::load_API_Handler_OpenGL(const Kozy::GPU_API_ID&);
 
 public:
@@ -25,7 +28,7 @@ private:
 
 };
 
-API_Handler load_API_Handler_OpenGL(const Kozy::GPU_API_ID&);
+//API_Handler load_API_Handler_OpenGL(const Kozy::GPU_API_ID&);
 
 }
 
