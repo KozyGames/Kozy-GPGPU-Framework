@@ -5,6 +5,7 @@
 *.obj
 *.a
 
-*/build/*
-*/test_build/*
-*/Test/*
+build/*
+
+.*
+!.gitignore
