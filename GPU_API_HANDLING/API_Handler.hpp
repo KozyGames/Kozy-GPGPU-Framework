@@ -12,7 +12,7 @@ class API_Handler {
 
 
 public:
-    static API_Handler get_API_Handler(const GPU_API_ID& apiTag);
+    static API_Handler create_API_Handler(const GPU_API_ID& apiTag);
 
     virtual ~API_Handler() {
         

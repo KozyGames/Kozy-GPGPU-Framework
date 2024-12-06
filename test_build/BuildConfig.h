@@ -18,8 +18,13 @@ Any build changes shall be done here
 struct BuildConfig {
     BuildConfig() = delete;
 	
+<<<<<<< HEAD:test_build/BuildConfig.h
     inline static constexpr unsigned VERSION_MAJOR = ;
     inline static constexpr unsigned VERSION_MINOR = ; 
+=======
+    inline static constexpr unsigned VERSION_MAJOR = 1;
+    inline static constexpr unsigned VERSION_MINOR = 0; 
+>>>>>>> b53e7362a4c3a38402b051d2d08327f57849d987:build/BuildConfig.h
 
 // * General DEBUG Settings *
 

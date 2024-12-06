@@ -6,4 +6,5 @@
 *.a
 
 */build/*
+*/test_build/*
 */Test/*

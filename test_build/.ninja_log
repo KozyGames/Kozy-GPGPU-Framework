@@ -1,4 +1,5 @@
 # ninja log v6
+<<<<<<< HEAD:test_build/.ninja_log
 16	352	7548449669375152	CMakeFiles/miniTest.dir/testMain.cpp.obj	b23c76e39f92fa7b
 19	85	7548438274862580	miniTest.exe	7da42203b8bec8bc
 15	50	7548452680123728	GPU_API_HANDLING/CMakeFiles/GPU_API_HANDLING.dir/GPGPU_Manager.cpp.obj	2c73d62ea2af20d0
@@ -94,3 +95,8 @@
 4	282	7549010941336815	GPU_API_HANDLING/CMakeFiles/GPU_API_HANDLING.dir/API_Handler_OpenGL.cpp.obj	27ebaea7dd9d91fb
 283	335	7549010944129368	GPU_API_HANDLING/libGPU_API_HANDLING.a	60c242a58715b95c
 335	404	7549010944663504	miniTest.exe	4d339e2cca2a9fdb
+=======
+13	817	7539869902108269	CMakeFiles/GPGPU-Test.dir/Test/compileTest.cpp.obj	6c84f1ccf1870244
+14	923	7539878240328101	CMakeFiles/Kozy_GPGPU.dir/API_Handler.cpp.obj	d5879a92d697ffb4
+14	851	7539883028920175	CMakeFiles/Kozy_GPGPU.dir/API_Handler.cpp.obj	d5879a92d697ffb4
+>>>>>>> b53e7362a4c3a38402b051d2d08327f57849d987:build/.ninja_log
