@@ -14,22 +14,15 @@ add_subdirectory(GPU_API_HANDLING)
 
 #add_subdirectory(Kozy_GPGPU)
 
-add_executable(GPGPU-Test 
+add_executable(miniTest 
 #main.cpp
 Test/compileTest.cpp
 
 )
-target_link_libraries(GPGPU-Test Kozy_GPGPU)
-
-
-
-add_executable(miniTest 
-    testMain.cpp
-)
-
-target_link_libraries(miniTest 
+target_link_libraries(miniTest
     GPU_API_HANDLING
 )
+
 
 add_compile_definitions(M_IS_DEBUG=${MM_IS_DEBUG})
 #add_compile_definitions(M_IS_DEBUG=${true})

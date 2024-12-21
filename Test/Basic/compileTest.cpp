@@ -10,7 +10,7 @@ using namespace std;
 
 int main(int argLen, const char** args) {
     //static constexpr Kozy::GPU_API_ID tag(Kozy::Implemented_API::OpenGL, 3, 3);
-    static constexpr Kozy::GPU_API_ID tag;
+ /**   static constexpr Kozy::GPU_API_ID tag;
     auto tag2 = tag;
     tag2.major = 42;
     //static constexpr auto sss = "ABC";
@@ -22,7 +22,7 @@ int main(int argLen, const char** args) {
     cout << tag.str() << endl;
     cout << tag2.str() << endl;
    
-
+*/
 
     return 0;
 }

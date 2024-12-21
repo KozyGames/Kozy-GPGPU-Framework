@@ -1,6 +1,0 @@
-C:/Kozy_Repo/Projects/Kozy-GPGPU-Framework/test_build/CMakeFiles/miniTest.dir
-C:/Kozy_Repo/Projects/Kozy-GPGPU-Framework/test_build/CMakeFiles/edit_cache.dir
-C:/Kozy_Repo/Projects/Kozy-GPGPU-Framework/test_build/CMakeFiles/rebuild_cache.dir
-C:/Kozy_Repo/Projects/Kozy-GPGPU-Framework/test_build/GPU_API_HANDLING/CMakeFiles/GPU_API_HANDLING.dir
-C:/Kozy_Repo/Projects/Kozy-GPGPU-Framework/test_build/GPU_API_HANDLING/CMakeFiles/edit_cache.dir
-C:/Kozy_Repo/Projects/Kozy-GPGPU-Framework/test_build/GPU_API_HANDLING/CMakeFiles/rebuild_cache.dir

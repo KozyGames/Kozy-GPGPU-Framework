@@ -9,3 +9,5 @@ build/*
 
 .*
 !.gitignore
+
+Test/Temp/*
