@@ -1,9 +1,0 @@
-
-add_subdirectory(GPU_API_HANDLING)
-
-
-configure_file(BuildConfig.h.in BuildConfig.h)
-
-target_include_directories(miniTest PUBLIC
-    "${PROJECT_SOURCE_DIR}/GPU_API_HANDLING"
-)

@@ -1,13 +1,13 @@
+.vscode
+notes.txt
+build
+external
 
 *.exe
 *.out
 *.o
 *.obj
 *.a
-
-build/*
-
 .*
-!.gitignore
 
-Test/Temp/*
+!.gitignore
