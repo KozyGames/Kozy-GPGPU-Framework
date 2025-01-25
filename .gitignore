@@ -8,6 +8,6 @@ external
 *.o
 *.obj
 *.a
-.*
 
 !.gitignore
+!external/temp.txt
